@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Desarrollador - Agustin Perrone</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="main-header">
+    <h1>Agustin Perrone</h1>
+    <p>Desarrollador Full Stack</p>
+  </header>
+
+  <section class="about" id="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un desarrollador apasionado por crear soluciones innovadoras con tecnologías modernas. Me especializo en desarrollo web front-end y back-end, con experiencia en Python, JavaScript, Flask y bases de datos.
+      También cuento con experiencia en la creación y personalización de tiendas online utilizando plataformas como Shopify y WooCommerce, lo que me permite desarrollar soluciones de comercio electrónico adaptadas a las necesidades de cada cliente.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills-list">
+      <div class="skill"><i class="fab fa-python"></i> Python</div>
+      <div class="skill"><i class="fas fa-fire"></i> Flask</div>
+      <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+      <div class="skill"><i class="fab fa-react"></i> React</div>
+      <div class="skill"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="skill"><i class="fas fa-database"></i> SQL</div>
+      <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
+      <div class="skill"><i class="fas fa-shopping-cart"></i> Shopify</div>
+      <div class="skill"><i class="fas fa-store"></i> WooCommerce</div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Proyectos</h2>
+  
+    <h3>Proyectos Profesionales</h3>
+    <div class="project-group">
+      <div class="project">
+        <h4>Plataforma Web de Entrenamiento Personal</h4>
+        <p>es una aplicación web desarrollada con Python (Flask) orientada a ofrecer servicios de entrenamiento personalizado. 
+          El sitio está diseñado con un estilo visual elegante (fondo negro y rosa claro) y es completamente responsive.</p>
+        <a href="https://github.com/Agustin1112/paginakaren" target="_blank" class="btn">Ver código</a>
+      </div>
+  
+      <div class="project">
+        <h4>Aplicación web con React JS y API de Flask</h4>
+        <p>Proyecto realizado para la empresa Anda donde los funcionarios pueden elegir para reservar el salon de evento.</p>
+        <a href="https://github.com/Agustin1112/Club-de-Funcionarios-ptuy4" target="_blank" class="btn">Ver código</a>
+      </div>
+    </div>
+  
+    <hr class="project-divider" />
+  
+    <h3>Proyectos de Estudio</h3>
+    <div class="project-group">
+      <div class="project">
+        <h4>Generador de un perfil condicional</h4>
+        <p>Crear una tarjeta de perfil con variables dinámicas.</p>
+        <a href="https://github.com/Agustin1112/exercise-conditional-profile-card" target="_blank" class="btn">Ver código</a>
+      </div>
+  
+      <hr class="sub-divider" />
+  
+      <div class="project">
+        <h4>Generador de Nombres de Dominios</h4>
+        <p>Script que genera combinaciones posibles de dominios.</p>
+        <a href="https://github.com/Agustin1112/Generador-de-Nombres-de-Dominios" target="_blank" class="btn">Ver código</a>
+      </div>
+  
+      <hr class="sub-divider" />
+  
+      <div class="project">
+        <h4>Landing Page con React</h4>
+        <p>Construcción de landing con componentes funcionales.</p>
+        <a href="https://github.com/Agustin1112/Proyecto-Landing-Page-con-React" target="_blank" class="btn">Ver código</a>
+      </div>
+  
+      <hr class="sub-divider" />
+  
+      <div class="project">
+        <h4>Lista de Contactos usando React & Context</h4>
+        <p>App con CRUD de contactos usando Context API.</p>
+        <a href="https://github.com/Agustin1112/Lista-de-contactos-ap" target="_blank" class="btn">Ver código</a>
+      </div>
+  
+      <hr class="sub-divider" />
+  
+      <div class="project">
+        <h4>API de Lista de Tareas Interactiva</h4>
+        <p>API REST con GET, POST y DELETE de tareas.</p>
+        <a href="https://github.com/Agustin1112/python-flask-api-tutorial" target="_blank" class="btn">Ver código</a>
+      </div>
+  
+      <hr class="sub-divider" />
+  
+      <div class="project">
+        <h4>Modelo de Datos del blog de StarWars</h4>
+        <p>Diagrama ER de base de datos para blog de StarWars.</p>
+        <a href="https://github.com/Agustin1112/exercise-starwars-data-modeling" target="_blank" class="btn">Ver código</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <p>Por favor, completa el siguiente formulario para ponerte en contacto conmigo. ¡Te responderé lo antes posible!</p>
+    
+    <form method="POST" action="/" class="contact-form">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/Agustin1112" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/agustin-perrone" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/59894019188?text=Hola%20Agustín,%20estoy%20interesado%20en%20tus%20servicios%20como%20desarrollador." target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

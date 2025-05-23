@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habilidades | Agustin Perrone</title>
+  <meta name="description" content="Estas son las habilidades y tecnologías que utiliza Agustin Perrone como desarrollador web.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-xW6BTo8DqRg2X3QoGUz8D/FfvlVfQZ+OkH+DK/XrjSvKAXyt+ObWvBlX47yt7K3aVvTvUyJt9Qbd2wy8vT3Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Agustin Perrone</div>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">Sobre mí</a></li>
+      <li><a href="skills.html" class="active">Habilidades</a></li>
+      <li><a href="projects.html">Proyectos</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="skills-section">
+      <h1>Habilidades</h1>
+      <p>Estas son algunas de las tecnologías y herramientas con las que trabajo:</p>
+      <div class="skills-list">
+        <div class="skill">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-flask"></i>
+          <p>Flask</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js-square"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-react"></i>
+          <p>React</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-database"></i>
+          <p>SQL</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-git-alt"></i>
+          <p>Git</p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-code"></i>
+          <p>VS Code</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://wa.me/5491122334455" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/agustinperrone" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/agustinperrone" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p class="footer-copy">© 2025 Agustin Perrone. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

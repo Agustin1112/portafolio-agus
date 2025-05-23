@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyectos - Agustin Perrone</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Agustin Perrone</div>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">Sobre mí</a></li>
+      <li><a href="skills.html">Habilidades</a></li>
+      <li><a href="projects.html" class="active">Proyectos</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="main-header">
+    <h1>Mis Proyectos</h1>
+    <p>Explora algunos de los desarrollos en los que he trabajado.</p>
+  </header>
+
+  <section class="projects" id="projects">
+    <h2>Proyectos Profesionales</h2>
+    <p>Estos son los proyectos más completos en los que he trabajado recientemente:</p>
+
+    <div class="projects-list">
+      <div class="project">
+        <h3>Plataforma Web de Entrenamiento Personal</h3>
+        <p>Aplicación web desarrollada con Python (Flask) para ofrecer servicios de entrenamiento personalizado. Diseño elegante (fondo negro y rosa claro) y totalmente responsive.</p>
+        <a href="https://github.com/Agustin1112/paginakaren" target="_blank" class="btn">Ver código</a>
+      </div>
+
+      <div class="project">
+        <h3>API REST con Flask</h3>
+        <p>Desarrollé una API REST para gestionar usuarios y productos, utilizando Flask y JWT para autenticación.</p>
+        <a href="https://github.com/Agustin1112/api-flask" target="_blank" class="btn">Ver código</a>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 50px;">Proyectos de Estudio</h2>
+    <p>Algunos proyectos realizados durante mi formación o como práctica personal:</p>
+
+    <div class="projects-list">
+      <div class="project">
+        <h3>Generador de nombres de dominios</h3>
+        <p>Crear un script que genere todas las combinaciones posibles de nombres de dominio de una lista de pronombres, adjetivos y sustantivos.</p>
+        <a href="https://github.com/Agustin1112/Generador-de-Nombres-de-Dominios" target="_blank" class="btn">Ver código</a>
+      </div>
+
+      <div class="project">
+        <h3>Juego Adivina el Número</h3>
+        <p>Juego donde el usuario intenta adivinar un número generado aleatoriamente. Ideal para practicar lógica y entrada de datos.</p>
+        <a href="https://github.com/Agustin1112/adivina-numero" target="_blank" class="btn">Ver código</a>
+      </div>
+
+      <div class="project">
+        <h3>Formulario de Contacto HTML/CSS</h3>
+        <p>Maquetación de un formulario responsivo con validaciones básicas. Proyecto inicial de diseño web.</p>
+        <a href="https://github.com/Agustin1112/formulario-contacto" target="_blank" class="btn">Ver código</a>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="https://github.com/Agustin1112" target="_blank" class="btn">Ver todos los proyectos en GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/Agustin1112" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/agustin-perrone" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

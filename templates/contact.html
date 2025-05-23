@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Agustin Perrone</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xW6BTo8DqRg2X3QoGUz8D/FfvlVfQZ+OkH+DK/XrjSvKAXyt+ObWvBlX47yt7K3aVvTvUyJt9Qbd2wy8vT3Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Agustin Perrone</div>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">Sobre mí</a></li>
+      <li><a href="skills.html">Habilidades</a></li>
+      <li><a href="projects.html">Proyectos</a></li>
+      <li><a href="contact.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="contact-section">
+      <h1>Contacto</h1>
+      <p>¿Te gustaría trabajar conmigo o tienes alguna consulta? Envíame un mensaje y me pondré en contacto contigo pronto.</p>
+      
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <ul class="flash">
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+
+      <form method="POST" class="contact-form">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+        <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://wa.me/5491122334455" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://github.com/tu_usuario" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tu_usuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
